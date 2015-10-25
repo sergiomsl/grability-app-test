@@ -1,0 +1,13 @@
+.news-image {
+  width: 20%;
+  float: left;
+}
+
+.news-image img {
+  max-width: 100%;
+  border-radius: 50%;
+}
+
+.media-left, .media>.pull-left {
+  padding-right: 0;
+}

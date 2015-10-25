@@ -1,0 +1,17 @@
+.navbar-default {
+  background-color: $primary-color;
+}
+
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+  background-color: transparent;
+}
+
+.navbar-toggle,{
+  float: left;
+  border: none;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: white;
+}
