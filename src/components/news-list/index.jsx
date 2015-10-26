@@ -1,5 +1,6 @@
 import React from 'react'
 import NewsRow from '../news-row'
+import NewsPost from '../news-post'
 
 class NewsList extends React.Component {
   render () {

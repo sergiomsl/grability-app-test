@@ -1,12 +1,39 @@
 .news-title {
   width: 80%;
   float: right;
-  padding-left: 1em;
+  padding-left: 1rem;
+  display: flex;
 }
 
 .news-title__text {
   color: $primary-text;
   font-family: $font-stack;
-  font-size: 16px;
-  margin-top: 10px;
+  font-size: 1rem;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (min-width:600px) and (max-width:767px) {
+  .news-title__text {
+    font-size: 1.5rem
+  }
+}
+
+@media screen and (min-width:768px) and (max-width:991px) {
+  .news-title__text {
+    font-size: 2rem
+  }
+}
+
+@media screen and (min-width:992px) and (max-width:1199px) {
+  .news-title__text {
+    font-size: 2.2rem
+  }
+}
+
+@media screen and (min-width:1200px) {
+  .news-title__text {
+    font-size: 3rem
+  }
 }

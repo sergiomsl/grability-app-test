@@ -3,3 +3,12 @@
 @import './utils/colors';
 @import './utils/utility';
 @import 'partials';
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: $base-font-size;
+}

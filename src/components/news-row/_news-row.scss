@@ -1,9 +1,40 @@
 .news-row {
   background-color: white;
-  padding: .7em 1em;
-  height: 95px;
+  padding: .5rem;
+  min-height: 15vh;
+  display: flex;
 }
 
-.media {
-  margin-top: 5px;
+.news-row__post {
+  display: none;
+  background-color: white;
+  margin-top: .32rem;
+  padding: .5rem;
+}
+
+@media screen and (min-width:600px) and (max-width:767px) {
+  .news-row,
+  .news-row__post {
+    padding: 1rem;
+  }
+}
+
+@media screen and (min-width:768px) and (max-width:991px) {
+  .news-row {
+    padding: 1.2rem;
+  }
+}
+
+@media screen and (min-width:992px) and (max-width:1199px) {
+  .news-row,
+  .news-row__post {
+    padding: 1.5rem;
+  }
+}
+
+@media screen and (min-width:1200px) {
+  .news-row,
+  .news-row__post {
+    padding: 2rem;
+  }
 }

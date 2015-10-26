@@ -25,8 +25,21 @@ gulp.task('sass', function() {
     .pipe(gulp.dest('./build/css/'))
 })
 
+gulp.task('build', function() {
+  browserify({
+    entries: './src/index.jsx',
+    extensions: ['.jsx'],
+    debug: true
+  })
+  .transform(babelify)
+  .bundle()
+  .pipe(source('bundle.js'))
+  .pipe(gulp.dest('./build/js'))
+})
+
 gulp.task('watch', function() {
-  gulp.watch(['./src/sass/*.scss', './src/sass/**/*.scss'], ['sass'])
+  gulp.watch('./src/**/*.jsx', ['build'])
+  gulp.watch(['./src/sass/*.scss', './src/sass/**/*.scss', './src/components/**/*.scss'], ['sass'])
 })
 
 gulp.task('default', ['server', 'watch'])

@@ -1,3 +1,33 @@
 .news-list {
-  padding: .5em
+  padding: .5em;
+  width: 98%;
+  margin: 0 auto;
+}
+
+@media screen and (min-width:600px) and (max-width:767px) {
+  .news-list {
+    width: 95%;
+    margin: 1rem auto;
+  }
+}
+
+@media screen and (min-width:768px) and (max-width:991px) {
+  .news-list {
+    width: 95%;
+    margin: 1.5rem auto;
+  }
+}
+
+@media screen and (min-width:992px) and (max-width:1199px) {
+  .news-list {
+    width: 90%;
+    margin: 3.2rem auto;
+  }
+}
+
+@media screen and (min-width:1200px) {
+  .news-list {
+    width: 90%;
+    margin: 4rem auto;
+  }
 }
