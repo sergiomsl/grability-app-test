@@ -1,3 +1,5 @@
+// El contenido de llamadaAPI.jsx en la raiz del directorio debe reemplazar este contenido para llamar al API
+
 import React from 'react'
 import ReactDOM from 'react-dom'
 import NewsList from './components/news-list'
